@@ -65,10 +65,7 @@ describe("Update the records", () => {
     const student1 = Student.updateOne({name: 'Julia'}, { $mul: { grade: julia.articleCount } })
     .then(Student.findOne({name: 'Julia'}) )
     .then(student => {
-      console.log(`grade: ${student.grade}`);
-      console.log(`grade: ${student.grade}, articles: ${student.articleCount}, final grades: ${student.grade}`)
       assert(student.grade === 20)
-      
     })
     done()
   })

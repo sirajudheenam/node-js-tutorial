@@ -31,7 +31,6 @@ describe('Association Test', () => {
     Student.findOne({name: 'Saba'})
     .populate('articleBlog')
     .then(student => {
-      console.log(student.articleBlog[0]);
       assert(student.articleBlog[0].content === 'Mongoose and Mocha')
       done()
     })

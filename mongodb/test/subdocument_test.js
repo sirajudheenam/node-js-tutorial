@@ -11,7 +11,6 @@ describe("Subdocument ", () => {
     .then(() => {
       Student.findOne({name: 'Oliver'})
       .then(student => {
-        console.log(student.articles[0].title)
         assert(student.articles[0].title === 'JavaScript')
         done()
       })
