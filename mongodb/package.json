@@ -1,0 +1,17 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "MongoDB brew install mongodb-community brew services start mongodb-community",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT 3100 node start",
+    "test": "nodemon --exec mocha -R min"
+  },
+  "author": "Sirajudheen Mohamed Ali",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.1.3",
+    "mongoose": "^6.1.5",
+    "nodemon": "^2.0.15"
+  }
+}

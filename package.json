@@ -1,0 +1,17 @@
+{
+  "name": "node-js-tutorial",
+  "version": "1.0.0",
+  "description": "NodeJS tutorial",
+  "main": "app.js",
+  "scripts": {
+    "start": "PORT=4000 node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "author": "Sirajudheen Mohamed Ali",
+  "license": "ISC",
+  "type": "module"
+}
